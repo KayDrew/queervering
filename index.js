@@ -4,11 +4,11 @@ import { engine } from 'express-handlebars';
 import session from 'express-session';
 import { MongoClient } from 'mongodb';
 import services from './routes/routes.js';
-
 const app = express()
 
 app.use(express.static('public'));
 app.use(express.static('images'));
+app.use(express.static('fonts'));
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 app.set('views', './views');

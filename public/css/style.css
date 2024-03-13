@@ -1,0 +1,78 @@
+footer p{
+    color: rgb(207, 206, 206);
+}
+
+footer {
+    background-color: rgb(21, 23, 29);
+    color: rgb(34, 34, 34);
+    padding-left: 0px;
+    font-size: 12px;
+    padding-bottom: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.footerDiv{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.contact-info {
+    margin-bottom: 15px;
+}
+
+
+.contact-info {
+    margin-bottom: 15px;
+    margin-top: -5px;
+}
+
+
+.social-media h5{
+    color:rgb(14, 130, 255);
+    margin-left: 14px;
+    font-size: 22px;
+    margin-top: 8px;
+}
+
+
+.social-media a {
+    
+    color:rgb(125, 122, 122);
+    margin-left:10px;
+    font-size: 16px;
+    }
+
+.social-media a:hover {
+    color: black;
+}
+
+.rights{
+    font-size: 13px;
+    font-weight: bold;
+  
+    
+}
+
+.footernav{
+    margin-bottom: 20px;
+    margin-top: -20px;
+   
+}
+
+
+
+.a,.footerDiv p, #address{
+
+    color:rgb(178, 178, 178);
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+
+}
