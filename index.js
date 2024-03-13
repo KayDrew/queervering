@@ -16,34 +16,34 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.use(session({
-  secret: process.env.APP_SECRET,
-  resave: false,
-  saveInitialized: false
+    secret: process.env.APP_SECRET,
+    resave: false,
+    saveInitialized: false
 }));
 
 export async function connectToCluster(uri) {
     let mongoClient;
- 
+
     try {
         mongoClient = new MongoClient(uri);
         console.log('Connecting to MongoDB Atlas cluster...');
         await mongoClient.connect();
         console.log('Successfully connected to MongoDB Atlas!');
- 
+
         return mongoClient;
     } catch (error) {
         console.error('Connection to MongoDB Atlas failed!', error);
         process.exit();
     }
- }
+}
 
 
- const route= new services();
- app.get("/",route.homePage);
+const route = new services();
+app.get("/", route.homePage);
 
 
-const PORT= process.env.PORT||3000;
+const PORT = process.env.PORT || 3000;
 
-app.listen(PORT,function(){
-    console.log("App starting on port "+PORT);
+app.listen(PORT, function () {
+    console.log("App starting on port " + PORT);
 });

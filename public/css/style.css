@@ -1,14 +1,12 @@
-
-
-.featured{
-    border-radius: 50px;
-background: #e0e0e0;
-box-shadow:  40px 40px 60px #aeaeae, -40px -40px 60px #ffffff;
-width: 200px;
+.featured {
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #aeaeae, -20px -20px 60px #ffffff;
+    padding: 10px;
 }
 
-footer p{
-    color:rgb(207, 206, 206);
+footer p {
+    color: rgb(207, 206, 206);
 }
 
 footer {
@@ -16,22 +14,23 @@ footer {
     color: rgb(34, 34, 34);
     padding-left: 30px;
     font-size: 12px;
-    padding-bottom: 3px;
+    padding-bottom: 10px;
     padding-top: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+
 }
 
-.a{
+.a {
     text-decoration: none;
 }
 
-.footerDiv{
+.footerDiv {
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
 }
+
 .contact-info {
     margin-bottom: 15px;
 }
@@ -39,67 +38,69 @@ footer {
 
 .contact-info {
     margin-bottom: 15px;
-   
+
 }
 
 
-.social-media h5{
-    color:rgb(207, 206, 206);
+.social-media h5 {
+    color: rgb(207, 206, 206);
     margin-left: 16px;
     font-size: 20px;
     margin-top: 5px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 10px;
-  
+
 }
 
 
-.social-media a { 
-    color:rgb(207, 206, 206);
-    margin-left:18px;
+.social-media a {
+    color: rgb(207, 206, 206);
+    margin-left: 18px;
     font-size: 18px;
-    }
+}
 
-    .extraLinks{
-        border-top: 1px solid rgba(185, 182, 182,0.3);
-        border-bottom: 1px solid rgba(185, 182, 182,0.3);
-        padding: 20px;
-        padding-left: 0px;
+.extraLinks {
+    border-top: 1px solid rgba(185, 182, 182, 0.3);
+    border-bottom: 1px solid rgba(185, 182, 182, 0.3);
+    padding: 20px;
+    padding-left: 0px;
 
-    }
-    
-    .extraLinks a{  
-         color:rgb(185, 182, 182);
-        margin-left:18px;
-        font-size: 13px;
-        border-left: 1px solid rgb(185, 182, 182);
-        padding-left: 5px; 
-        text-decoration: none;
+}
 
-    }
+.extraLinks a {
+    color: rgb(185, 182, 182);
+    margin-left: 18px;
+    font-size: 13px;
+    border-left: 1px solid rgb(185, 182, 182);
+    padding-left: 5px;
+    text-decoration: none;
+
+}
 
 .social-media a:hover {
     color: black;
 }
 
-.rights{
+.rights {
     font-size: 13px;
     font-weight: bold;
-  
-    
+
+
 }
 
-.footernav{
+.footernav {
     margin-bottom: 20px;
- 
-   
+
+
 }
 
 
 
-.a,.footerDiv p, #address{
+.a,
+.footerDiv p,
+#address {
 
-    color:rgb(178, 178, 178);
+    color: rgb(178, 178, 178);
     display: block;
     font-size: 15px;
     margin-bottom: 10px;
