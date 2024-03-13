@@ -2,9 +2,9 @@
 
 .featured {
     border-radius: 20px;
-    background: #e0e0e0;
-    box-shadow: 20px 20px 60px #aeaeae, -20px -20px 60px #ffffff;
-    padding: 10px;
+    background: #d5d4dd;
+    box-shadow:  20px 20px 40px #b5b4bc,
+                 -20px -20px 40px #f5f4fe;
     
 }
 
@@ -14,7 +14,8 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     padding-right: 15px;
-    margin-top: -20px;
+    margin-top: -15px;
+    margin-bottom: 20px;
     
 }
 .vibeImg {
