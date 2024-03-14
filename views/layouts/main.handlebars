@@ -1,99 +1,82 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Queervering</title>
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+<title>Queervering</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script src="js/jquery-1.6.js" ></script>
+<script src="js/cufon-yui.js"></script>
+<script src="js/cufon-replace.js"></script>
+<script src="js/NewsGoth_BT_400.font.js"></script>
+<script src="js/NewsGoth_BT_700.font.js"></script>
+<script src="js/jcarousellite.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/atooltip.jquery.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<link rel="stylesheet" href="css/ie.css" type="text/css" media="all">
+<![endif]-->
 </head>
-
-<body>
-  <header >
-
-    <nav class="navbar navbar-expand-sm navbar-light bg-light" style="max-height: 120px;box-shadow:1px 1px 2px grey">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/index"><img src="logo2.png" alt="logo" style="opacity: 5;filter:contrast(2)" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/index" style="color: black;">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)" style="color: black;">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)" style="color: black;">Support</a>
-            </li>
-            <li class="nav-item">
-              <a href="/signin" class="nav-link" target="_blank" style="color: black;"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign
-                Up</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search">
-            <button class="btn" type="button" style="margin-left: -40px;background:blue;color:whitesmoke"><i class="fa fa-search"></i></button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <body id="page1">
+<div class="bg1">
+  <div class="main">
+    <!--header -->
+    <header>
+      <nav>
+        <ul id="menu">
+          <li class="active"><a href="/index">Home</a></li>
+          <li><a href="/parties">Events</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="/news">News</a></li>
+          <li><a href="/contacts">Contact US</a></li>
+        </ul>
+      </nav>
+      <h1><a href="/" id="logo">Queervering rainbow celebrations</a></h1>
+    </header>
   {{{body}}}
+   <!--content end-->
+      <!--footer -->
+      <footer>
+        <div class="line1">
+          <div class="line2 wrapper">
+            <div class="icons">
+              <h4>Connect With Us</h4>
+              <ul id="icons">
+                <li><a href="#" class="normaltip"><img src="/icon1.jpg" alt=""></a></li>
+                <li><a href="#" class="normaltip"><img src="/icon2.jpg" alt=""></a></li>
+                <li><a href="#" class="normaltip"><img src="/icon3.jpg" alt=""></a></li>
+                <li><a href="#" class="normaltip"><img src="/icon4.jpg" alt=""></a></li>
+                <li><a href="#" class="normaltip"><img src="/icon5.jpg" alt=""></a></li>
+              </ul>
+              <!-- {%FOOTER_LINK} -->
+            </div>
+            <div class="info">
+              <h4>About Us</h4>
+              <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">The Team</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="info">
+              <h4>Join In</h4>
+              <ul>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Register Event</a></li>
+                <li><a href="#">Promotions</a></li>
+              </ul>
+            </div>
+            <div class="phone">
+              <h4>Order Tickets</h4>
+              <p> Telephone<span>+2765 855 1062</span></p>
+            </div>
+          </div>
+          @Copyright &copy; <a href="#">Queervering</div>
+      </footer>
 </body>
-<footer>
-  <div class="footerDiv row">
-    <div class="contact-info col-sm">
-      <p id='address'> 28 Kgobokwane<br> Dennilton<br>Limpopo<br> 1030</p>
-      <p><i class="fa fa-envelope"></i> info@queervering.com</p>
-      <p><i class="fa fa-phone"></i> +27 6585 51062</p>
-    </div>
-    <div class="footernav col-sm">
-      <h5 style="
-    color: rgb(23, 22, 22);font-size: 18px;margin-bottom:5px;">Useful Links</h5>
-      <a href="/home" target="_blank" class="a">Home</a>
-      <a href="/events" target="_blank" class="a">Events</a>
-
-      <a href="/contact" target="_blank" class="a">Contact Us</a>
-      <a href="/about" target="_blank" class="a">About Us</a>
-
-    </div>
-   <div class="col-sm">
-    <div class="social-media">
-      <h5>Follow Us</h5>
-      <a href="https://www.facebook.com/slickgadgets" target="_blank" rel="noopener noreferrer" "><i
-          class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.twitter.com/slickgadgets" target="_blank" rel="noopener noreferrer"><i
-          class="fa-brands fa-twitter"></i></a>
-      <a href="https://www.instagram.com/slickgadgets" target="_blank" rel="noopener noreferrer"><i
-          class="fa-brands fa-square-instagram"></i></a>
-    </div>
-    <img src="logo2.png" alt="logo" style="max-height: 120px;opacity: 5;filter:contrast(2)" "/>
-    </div>
-  </div>
-  <div class="extraLinks">
-    <a href="/faq" target="_blank" style="border-left: none;">FAQ</a>
-    <a href="/terms" target="_blank">Terms & Conditions</a>
-    <a href="/policy" target="_blank">Privacy Policy</a>
-
-  </div>
-
-  <div class="rights">
-    <p style="margin-top:10px;text-align:center; 
-    color: rgb(23, 22, 22);">&copy; 2024 Queervering. All Rights
-      Reserved.</p>
-  </div>
-</footer>
-
-</html>
+ </html>
