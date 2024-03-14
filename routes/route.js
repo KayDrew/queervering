@@ -4,28 +4,28 @@ export default function services() {
 
         let featured = [
             {
-                image: "rain.png",
+        
                 name: "Rainbow",
                 location: "Pretoria",
                 fee: "R1054",
-                description: "Annual rainbow dance event"
+                description: "Annual rainbow dance event",
+               
             },
             {
-                image: "rain.png",
+                name: "club",
+                location: "Pretoria",
+                fee: "R1054",
+                description: "Annual rainbow dance event",
+              
+            },
+            {
                 name: "Rainbow",
                 location: "Pretoria",
                 fee: "R1054",
-                description: "Annual rainbow dance event"
+                description: "Annual rainbow dance event",
+               
             },
             {
-                image: "rain.png",
-                name: "Rainbow",
-                location: "Pretoria",
-                fee: "R1054",
-                description: "Annual rainbow dance event"
-            },
-            {
-                image: "rain.png",
                 name: "Rainbow",
                 location: "Pretoria",
                 fee: "R1054",

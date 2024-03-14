@@ -6,18 +6,17 @@
     background: rgb(248, 250, 254);
     box-shadow:  20px 20px 40px #b5b4bc,
                  -20px -20px 40px #fefeff;
+              
+                
     
 }
 
-img{
-    opacity: 2;
-}
+
 
 .intro{
     display: grid;
     grid-template-columns: 2fr 1fr;
     padding-right: 15px;
-    margin-top: -15px;
     margin-bottom: 20px;
     
 }
@@ -42,12 +41,7 @@ footer {
     text-decoration: none;
 }
 
-.footerDiv {
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-}
 
 .contact-info {
     margin-bottom: 15px;
