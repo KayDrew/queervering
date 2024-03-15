@@ -1,3 +1,14 @@
+.infoBtn{
+
+	padding: 7px;
+	background-color: rgb(255, 111, 0);
+	border-radius: 5px;
+	font-weight: bold;
+	color: rgb(237, 228, 237);
+}
+
+
+
 /* Getting the new tags to behave */
 article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {
 	display: block;
@@ -94,7 +105,7 @@ h2 strong {
 h3 {
 	font-size:30px;
 	line-height:1.2em;
-	color:#7532a9;
+	color:#a980c8;
 	padding:0 0 8px 0;
 	font-weight:400;
 	letter-spacing:-2px;
@@ -117,7 +128,7 @@ header {
 #logo {
 	display:block;
 	text-indent:-9999px;
-	background:url( /logo3.png) 0 0 no-repeat;
+	background:url( /logo4.png) 0 0 no-repeat;
 	width:273px;
 	height:86px;
 }
@@ -149,9 +160,9 @@ header {
 /* ============================= content ====================== */
 
 .box {
-	background:url(/bg_content.png) repeat;
+	background:rgba(78, 29, 78, 0.82);
 	padding:20px 46px 50px 49px;
-	overflow:hidden
+	border-radius: 7px;
 }
 #page1 .box {
 	padding-top:34px;
@@ -255,22 +266,17 @@ header {
 .next:hover {
 	background-position: right bottom
 }
-.list1 {
-}
-.list1 li {
-	line-height:25px;
-}
-.list1 li a {
+
+
+.list1 li  {
 	color:#fff;
 	text-decoration:none;
 	padding-left:14px;
-	background:url( /marker_1.gif) 0 5px no-repeat
+	background:url( /marker_1.gif) 0 5px no-repeat;
+	line-height:25px;
 }
-.list1 li a:hover {
-	color:#7532a9
-}
-.folio {
-}
+
+
 .folio dt {
 	position:relative;
 	width:100%;

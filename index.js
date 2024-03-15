@@ -40,6 +40,9 @@ export async function connectToCluster(uri) {
 
 const route = new services();
 app.get("/", route.homePage);
+app.get("/gallery", route.gallery);
+app.get("/events", route.events);
+
 
 
 const PORT = process.env.PORT || 3000;

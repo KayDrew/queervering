@@ -40,7 +40,19 @@ export default function services() {
     }
 
 
+    function gallery(req,res){
+
+        res.render("gallery");
+    }
+
+    function events(req,res){
+
+        res.render("events");
+    }
+
     return {
         homePage,
+        gallery,
+        events
     }
 }
