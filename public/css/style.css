@@ -1,9 +1,9 @@
 .infoBtn{
 
 	padding: 7px;
-	background-color: rgb(255, 111, 0);
+	background-color: rgb(180, 39, 128);
 	border-radius: 5px;
-	font-weight: bold;
+	
 	color: rgb(237, 228, 237);
 }
 
@@ -31,7 +31,7 @@ mark, rp, rt, ruby, summary, time {
 /* Global properties ======================================================== */
 
 body {
-	background: url(/bg4.jpg)  0 repeat #000;
+	background: url(/bg_content.png)  0 repeat #000;
 	background-size: cover;
 	border:0;
 	font:14px Arial, Helvetica, sans-serif;
@@ -82,6 +82,7 @@ a:hover {
 h1 {
 	padding:35px 0 0 43px;
 }
+
 h2 {
 	font-size:40px;
 	color:#fff;
@@ -244,11 +245,8 @@ header {
 	margin-top:-11px
 }
 #gallery1 {
-	height: 225px !important;
-	margin-left:-7px;
 }
 #gallery1 li {
-	overflow:inherit !important;
 }
 .prev, .next {
 	float:right;
