@@ -1,4 +1,4 @@
-@media screen and (min-width:800px){
+@media screen and (min-width:900px){
 
 
 
@@ -7,10 +7,21 @@
         grid-template-columns: 1fr 1fr;
     }
     .main {
-        width: 80%;
+        width: 85%;
     }
 
     .box{
         margin-top: unset;
+    }
+
+    #menu > li > a {
+   
+        width:158px;
+        font-size:22px;
+    }
+
+    .gradient{
+        width: 80%;
+        margin: 0 auto;
     }
 }

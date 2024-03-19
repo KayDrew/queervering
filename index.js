@@ -42,6 +42,7 @@ const route = new services();
 app.get("/", route.homePage);
 app.get("/gallery", route.gallery);
 app.get("/events", route.events);
+app.get("/contact",route.contact);
 
 
 

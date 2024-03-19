@@ -50,9 +50,16 @@ export default function services() {
         res.render("events");
     }
 
+
+    function contact(req,res){
+
+        res.render("contact");
+    }
+
     return {
         homePage,
         gallery,
-        events
+        events,
+        contact
     }
 }
