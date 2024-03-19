@@ -1,1 +1,16 @@
+@media screen and (min-width:800px){
 
+
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .main {
+        width: 80%;
+    }
+
+    .box{
+        margin-top: unset;
+    }
+}

@@ -37,7 +37,7 @@ body {
 	font:14px Arial, Helvetica, sans-serif;
 	color:#7f7f7f;
 	line-height:25px;
-	min-width:960px;
+	
 }
 .ic, .ic a {
 	border:0;
@@ -64,7 +64,8 @@ body {
 
 .main {
 	margin: 0 auto;
-	width: 960px;
+	
+	
 }
 .bg1 {
 	background:url( /bg_menu.png) 0 0 repeat-x
@@ -132,6 +133,7 @@ header {
 	background:url( /logo4.png) 0 0 no-repeat;
 	width:273px;
 	height:86px;
+	
 }
 #menu {
 	width:100%;
@@ -164,6 +166,7 @@ header {
 	background:rgba(78, 29, 78, 0.82);
 	padding:20px 46px 50px 49px;
 	border-radius: 7px;
+	margin-top: 50px;
 }
 #page1 .box {
 	padding-top:34px;
@@ -301,10 +304,11 @@ header {
 
 footer {
 	height:172px;
-	color:#fff;
+	margin-top: 40px;
+
 }
 footer a {
-	color:#fff;
+	color:#737373;
 	text-decoration:none
 }
 footer a:hover {
@@ -327,19 +331,7 @@ footer a:hover {
 	float:left;
 	width:140px;
 }
-.phone {
-	width:215px;
-	float:left;
-	padding-left:70px;
-}
-.phone span {
-	font-size:30px;
-	margin-top:-5px;
-	text-transform:uppercase;
-	display:block;
-	line-height:1.2em;
-	letter-spacing:-2px;
-}
+
 #icons {
 	padding: 8px 0 0 0;
 	overflow:hidden;
@@ -425,3 +417,6 @@ footer a:hover {
 	color:#474747;
 	font:14px Arial, Helvetica, sans-serif;
 }
+
+
+
