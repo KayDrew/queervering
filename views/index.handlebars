@@ -1,4 +1,7 @@
+<div>
+
 <div style="display: grid;grid-template-columns:1fr 3fr">
+
   <header>
     <aside>
       <p> Menu </p>
@@ -27,21 +30,37 @@
         Contact
       </a>
     </aside>
-
-    <div class="social">
-      <a href="https://www.linkedin.com/in/florin-cornea-b5118057/" target="_blank">
-        <i class="fa fa-linkedin"></i>
-      </a>
-    </div>
   </header>
 
-  <div>
+  <div class="content">
+
+    <div style="display:grid;grid-template-columns: 4fr 1fr;">
+
       <img src="/logo4.png" alt="logo">
-  
+
+      <div style="padding-top: 40px;">
+        <img src="/icon4.jpg" alt="facebook" class="top-icon">
+        <img src="/icon3.jpg" alt="twitter" class="top-icon">
+      </div>
+
+    </div>
+    
+
+    <div class="categories">
+      
+      {{#each categories}}
+      <div>
+        <img src="{{this.image}}" alt="category" style="width: 300px;height:300px">
+        <p>{{this.name}}</p> 
+      </div>
+ {{/each}}
+    </div>
 
   </div>
 
 </div>
+
+
 
 <script>
 

@@ -2,38 +2,33 @@ export default function services() {
 
     function homePage(req, res) {
 
-        let featured = [
+        let categories= [
             {
-        
-                name: "Rainbow",
-                location: "Pretoria",
-                fee: "R1054",
-                description: "Annual rainbow dance event",
+        image:"cat1.png"
                
             },
             {
-                name: "club",
-                location: "Pretoria",
-                fee: "R1054",
-                description: "Annual rainbow dance event",
-              
+                image:"cat2.png",
+                name:"cat"
             },
-            {
-                name: "Rainbow",
-                location: "Pretoria",
-                fee: "R1054",
-                description: "Annual rainbow dance event",
+            {  image:"cat3.png",
+            name:"cat"
                
             },
-            {
-                name: "Rainbow",
-                location: "Pretoria",
-                fee: "R1054",
-                description: "Annual rainbow dance event"
+            {  image:"cat4.png",
+            name:"cat"
             },
+            {
+                image:"cat5.png",
+                name:"cat"
+            },
+            {
+                image:"cat6.png",
+                name:"cat"
+            }
         ];
         res.render("index", {
-            featured: featured
+            categories
         });
 
 
@@ -41,8 +36,34 @@ export default function services() {
 
 
     function gallery(req,res){
+        let categories= [
+            {
+        image:"cat1.png"
+               
+            },
+            {
+                image:"cat2.png",
+                name:"cat"
+            },
+            {  image:"cat3.png",
+            name:"cat"
+               
+            },
+            {  image:"cat4.png",
+            name:"cat"
+            },
+            {
+                image:"cat5.png",
+                name:"cat"
+            },
+            {
+                image:"cat6.png",
+                name:"cat"
+            }
+        ];
+      
 
-        res.render("gallery");
+        res.render("gallery",{categories});
     }
 
     function events(req,res){

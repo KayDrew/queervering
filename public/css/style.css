@@ -22,6 +22,7 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 40px;
 }
 
 .social-icon,
@@ -133,7 +134,7 @@ aside {
   color: #000;
   width: 250px;
   padding-left: 20px;
-  height: 100vh;
+  height: 100%;
   background-image: linear-gradient(30deg , #2a6cd5, #44a7fd);
   border-top-right-radius: 80px;
 }
@@ -221,7 +222,7 @@ body {
 
 .active{
   font-size:larger;
-  background-color: rgb(233, 39, 71);
+  background-color: purple;
   padding: 7px;
   outline: none;
   position: relative;
@@ -240,5 +241,26 @@ select{
 
 }
 
+.top-icon{
+margin:10px;
+  width: 30px;
+}
 
+.categories{
+  margin-left: 25px;
+}
+
+@media screen and (min-width:800px){
+
+  .categories{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+    opacity: 4;
+    filter: contrast(1.5);
+    
+  }
+
+  
+}
   
