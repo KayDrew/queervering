@@ -15,7 +15,7 @@ body{
 .footer {
   position: relative;
   width: 100%;
-  background: #4a90fa;
+  background: #3685fc;
   min-height: 100px;
   padding: 5px 20px;
   display: flex;
@@ -41,7 +41,7 @@ body{
 
 .social-icon__link {
   font-size: 2rem;
-  color: #fff;
+  color: #000;
   margin: 0 10px;
   display: inline-block;
   transition: 0.5s;
@@ -52,7 +52,7 @@ body{
 
 .menu__link {
   font-size: 1.2rem;
-  color: #fff;
+  color: #000;
   margin: 0 10px;
   display: inline-block;
   transition: 0.5s;
@@ -66,7 +66,7 @@ body{
 }
 
 .footer p {
-  color: #fff;
+  color: #000;
   margin: 15px 0 10px 0;
   font-size: 1rem;
   font-weight: 300;
@@ -130,7 +130,7 @@ body{
 
 
 aside {
-  color: #fff;
+  color: #000;
   width: 250px;
   padding-left: 20px;
   height: 100vh;
@@ -139,8 +139,8 @@ aside {
 }
 
 aside a {
-  font-size: 12px;
-  color: #fff;
+  font-size: 1em;
+  color: #000;
   display: block;
   padding: 12px;
   padding-left: 30px;
@@ -150,10 +150,10 @@ aside a {
 
 aside a:hover {
   color: #3f5efb;
-  background: #fff;
+  background: #000;
   outline: none;
   position: relative;
-  background-color: #fff;
+  background-color: #000;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -171,7 +171,7 @@ aside a:hover::after {
   height: 35px;
   width: 35px;
   border-bottom-right-radius: 18px;
-  box-shadow: 0 20px 0 0 #fff;
+  box-shadow: 0 20px 0 0 #000;
 }
 
 aside a:hover::before {
@@ -183,18 +183,22 @@ aside a:hover::before {
   height: 35px;
   width: 35px;
   border-top-right-radius: 18px;
-  box-shadow: 0 -20px 0 0 #fff;
+  box-shadow: 0 -20px 0 0 #000;
 }
+
+
 
 aside p {
   margin: 0;
   padding: 40px 0;
+  font-size: 1.6em;
+  font-weight: 500;
+  font-style: oblique;
 }
 
 body {
   font-family: 'Roboto';
   width: 100%;
-  height: 100vh;
   margin: 0;
 }
 
@@ -207,7 +211,7 @@ body {
   height: 14px;
   font-size: 14px;
   position: fixed;
-  color: #fff;
+  color: #000;
   background: #0077B5;
   padding: 10px;
   border-radius: 50%;
@@ -215,3 +219,26 @@ body {
   right:5px;
 }
 
+.active{
+  font-size:larger;
+  background-color: rgb(233, 39, 71);
+  padding: 7px;
+  outline: none;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+
+select{
+  width: 90%;
+  border:1px solid pink;
+  border-radius: 9px;
+  padding: 5px;
+  margin-top: 50px;
+  background: transparent;
+
+}
+
+
+  
