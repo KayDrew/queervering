@@ -308,6 +308,25 @@ margin:10px;
 
 
 
+@media screen and (max-width:800px){
+  .categories{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    opacity: 4;
+    filter: contrast(1.5);
+  
+    
+  }
+
+  .categories h4{
+    background-color:black;
+    
+
+}
+
+}
+
 @media screen and (min-width:800px){
 
 
