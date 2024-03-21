@@ -4,27 +4,30 @@ export default function services() {
 
         let categories= [
             {
-        image:"cat1.png"
+        image:"cat1.png",
+        name:"Drag shows"
                
             },
             {
                 image:"cat2.png",
-                name:"cat"
+                name:"Conferences"
             },
             {  image:"cat3.png",
-            name:"cat"
+             name:"Pride Events"
+           
                
             },
             {  image:"cat4.png",
-            name:"cat"
+             name:"Fundraising Events"
             },
             {
                 image:"cat5.png",
-                name:"cat"
+              name:"Themed Parties"
             },
             {
                 image:"cat6.png",
-                name:"cat"
+                name:"Art Events"
+                
             }
         ];
         res.render("index", {
@@ -36,34 +39,9 @@ export default function services() {
 
 
     function gallery(req,res){
-        let categories= [
-            {
-        image:"cat1.png"
-               
-            },
-            {
-                image:"cat2.png",
-                name:"cat"
-            },
-            {  image:"cat3.png",
-            name:"cat"
-               
-            },
-            {  image:"cat4.png",
-            name:"cat"
-            },
-            {
-                image:"cat5.png",
-                name:"cat"
-            },
-            {
-                image:"cat6.png",
-                name:"cat"
-            }
-        ];
-      
+        
 
-        res.render("gallery",{categories});
+        res.render("gallery");
     }
 
     function events(req,res){

@@ -6,27 +6,27 @@
     <aside>
       <p> Menu </p>
       <a href="/" class="active">
-        <i class="fa fa-home" aria-hidden="true" style="color: pink;"></i>
+        <i class="fa fa-home" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
         Home
       </a>
       <a href="/events">
-        <i class="fa fa-calendar" aria-hidden="true" style="color: pink;"></i>
+        <i class="fa fa-calendar" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
         Events
       </a>
-      <a href="/galery">
-        <i class="fa-solid fa-image" aria-hidden="true" style="color: pink;"></i>
+      <a href="/gallery">
+        <i class="fa-solid fa-image" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
         gallery
       </a>
       <a href="/publish">
-        <i class="fa fa-upload" aria-hidden="true" style="color: pink;"></i>
+        <i class="fa fa-upload" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
         Publish Your Event
       </a>
       <a href="/about">
-        <i class="fa-solid fa-info" aria-hidden="true" style="color: pink;"></i>
+        <i class="fa-solid fa-info" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
         About
       </a>
       <a href="/contact">
-        <i class="fa fa-envelope" aria-hidden="true" style="color: pink;"></i>
+        <i class="fa fa-envelope" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
         Contact
       </a>
     </aside>
@@ -39,19 +39,34 @@
       <img src="/logo4.png" alt="logo">
 
       <div style="padding-top: 40px;">
-        <img src="/icon4.jpg" alt="facebook" class="top-icon">
-        <img src="/icon3.jpg" alt="twitter" class="top-icon">
+       <a href=""><img src="/icon4.jpg" alt="facebook" class="top-icon"></a> 
+       <a href=""> <img src="/icon3.jpg" alt="twitter" class="top-icon"></a> 
       </div>
 
     </div>
-    
+
+   <div class="wrapper nine" style="margin-bottom: 80px;">
+        <div>
+            <h3 class="rotate">
+                <span>L</span>
+                <span>G</span>
+                <span>B</span>
+                <span>T</span>
+                <span>Q</span>
+                <span>+</span>
+                    
+            </h3>
+              
+            <h3><span id="pink">_EVENTS</span></h3>
+        </div>
+    </div>
 
     <div class="categories">
       
       {{#each categories}}
       <div>
         <img src="{{this.image}}" alt="category" style="width: 300px;height:300px">
-        <p>{{this.name}}</p> 
+        <h4>{{this.name}}</h4> 
       </div>
  {{/each}}
     </div>
@@ -64,6 +79,8 @@
 
 <script>
 
+const pink=document.querySelector("#pink");
+pink.classList.remove("rotate");
 
 
 
