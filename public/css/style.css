@@ -341,6 +341,42 @@ padding-left: 15px;
 .topContent{
   display:grid;grid-template-columns: 3fr 1fr;
 }
+
+div{
+ 
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+
+
+@media screen and (max-width:800px){
+
+.animated{
+  animation-name: category;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+
+}
+
+@keyframes category{
+  0%{
+      visibility: visible;
+      transform: translateY(100px);
+      opacity: 0;
+  }
+
+  100%{
+      transform: translateY(0px);
+      opacity: 1;    
+      visibility: visible;
+  }
+
+}
+
+}
+
 @media screen and (min-width:800px){
   .logo{
     width:unset;
@@ -391,6 +427,7 @@ width: 250px;
   .top-icon{
     width: 30px;
   }
+
 
 
 }

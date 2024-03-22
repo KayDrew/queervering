@@ -68,7 +68,7 @@
     <div class="categories">
       
       {{#each categories}}
-      <div>
+      <div class="entries">
         <img src="{{this.image}}" alt="category">
         <h4>{{this.name}}</h4> 
       </div>
@@ -82,9 +82,19 @@
 
 
 <script>
+    const observer= new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{
+            if(entry.isIntersecting){
+                entry.target.classList.add('animated');
+            }
 
-const pink=document.querySelector("#pink");
-pink.classList.remove("rotate");
+        });
+    });
+
+    const viewbox=document.querySelectorAll(".entries");
+    viewbox.forEach(entry=>{
+        observer.observe(entry);
+    });
 
 
 
