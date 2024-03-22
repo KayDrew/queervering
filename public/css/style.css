@@ -320,6 +320,8 @@ padding-left: 15px;
 
 }
 
+
+
 .largeMenu{
 
   display: none;
@@ -336,11 +338,17 @@ padding-left: 15px;
   width:200px;
 }
 
+.topContent{
+  display:grid;grid-template-columns: 3fr 1fr;
+}
 @media screen and (min-width:800px){
   .logo{
     width:unset;
   }
 
+  .topContent{
+    display:grid;grid-template-columns: 4fr 1fr;
+  }
 aside{
   
   background: #3685fcd8;
