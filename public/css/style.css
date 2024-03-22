@@ -134,7 +134,6 @@ aside {
 
   padding-left: 20px;
   height: 100%;
-  background: #3685fcd8;
   border-top-right-radius: 80px;
 }
 
@@ -241,25 +240,25 @@ select{
 }
 
 .top-icon{
+ 
 margin:10px;
-  width: 30px;
+  width: 20px;
 }
 
-.content{
 
-  margin-left: 25px;
-}
 
 .categories{
-
+width: 80%;
+margin: 0 auto;
   opacity: 4;
   filter: contrast(1.5);
+ 
 }
 
 .categories h4{
   color: rgb(176, 174, 174);
     width: 300px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     padding-left: 5px;
     box-shadow: 1px 1px 1.3px grey;
 }
@@ -267,19 +266,25 @@ margin:10px;
 .wrapper.nine {
   background-color:rgba(231, 220, 231, 0.345);
   font-family: 'Arvo', serif;
-
+padding-left: 15px;
  
 }
 
 .wrapper.nine h3{
   display: inline-block;
 }
+
+#pink{
+  color:rgb(196, 10, 72); 
+   font-size: 2rem;
+}
+
 .rotate span {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #e4e4e4;
   display: inline-flex;
   animation: rotate 2s infinite;
-  
+ 
   text-shadow: 1px 1px 2px black;
 }
 @keyframes rotate {
@@ -307,10 +312,6 @@ margin:10px;
   animation-delay: 1.2s;
 }
 
-#pink{
-  color:rgb(196, 10, 72); 
-   font-size: 3rem;
-}
 
 
 .categories img{
@@ -319,30 +320,70 @@ margin:10px;
 
 }
 
+.largeMenu{
 
+  display: none;
+}
+
+.menuBtn{
+  font-size: 30px;
+  color: rgb(168, 168, 168);
+  background-color: #000;
+  border: none;
+}
+
+.logo{
+  width:200px;
+}
 
 @media screen and (min-width:800px){
+  .logo{
+    width:unset;
+  }
 
 aside{
   
+  background: #3685fcd8;
 width: 250px;
+
 }
 .rotate span ,#pink{
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
   .categories{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 50px;
+    width: 90%;
+
+    
    
   }
 
   .categories h4{
     background-color:black;
+    margin-bottom: 20px;
     
   }
 
-  
+  .menuBtn{
+
+    display: none;
+  }
+
+  .indexPage{
+    display: grid;grid-template-columns:1fr 4fr
+  }
+
+  .largeMenu{
+    display: block;
+  }
+
+  .top-icon{
+    width: 30px;
+  }
+
+
 }
   
