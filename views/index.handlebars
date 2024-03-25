@@ -8,7 +8,7 @@
     <button type="button" class="menuBtn"><i class="fa fa-bars"></i></button>
     <div class="largeMenu">
       <p> Menu </p>
-      <a href="/" class="active">
+      <a href="/" class="active1">
         <i class="fa fa-home" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
         Home
       </a>
@@ -75,8 +75,8 @@
  {{/each}}
     </div>
       <div class="grey">
-    <h4 style="margin-bottom: 20px;color:rgb(228, 45, 106); ">Find LGBTQ+ Events In Your City</h4>
-    <p style="margin-bottom:25px;">Queervering brings you the best upcoming queer events near you. Looking to join the revolution for your human rights? Join one of the vibrant pride parades
+    <h3 style="margin-bottom: 20px;color:rgb(228, 45, 106);font-size:24px ">Find LGBTQ+ Events In Your City</h3>
+    <p style="margin-bottom:25px;font-size:19px">Queervering brings you the best upcoming queer events near you. Looking to join the revolution for your human rights? Join one of the vibrant pride parades
       near you. Lit themed parties and events are also available when you feel like getting down! Take a look at some of the featured events.
     </p>
     <a href="/events" class="linkBtn">See events..</a>
@@ -85,6 +85,19 @@
   <div class="modal"></div>
 
   <div class="form">
+<div class="word" style="text-align: center;padding-top:30px;color:orangered">
+  <span>T</span>
+  <span>A</span>
+  <span>L</span>
+  <span>K</span>
+  <span style="visibility:hidden;">_</span>
+  <span>T</span>
+  <span>O</span>
+  <span style="visibility:hidden;">_</span>
+  <span>U</span>
+   <span>S</span>
+</div>
+
     <div class="background">
   <div class="container">
     <div class="screen">
@@ -103,15 +116,15 @@
       <div class="screen-body">
         <div class="screen-body-item left">
           <div class="app-title">
-            <span>CONTACT</span>
-            <span>US</span>
+            <span>Hit Us Up</span>
+           
           </div>
-          <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div>
+          <div class="app-contact">info@queervering.com</div>
         </div>
         <div class="screen-body-item">
           <div class="app-form">
             <div class="app-form-group">
-              <input class="app-form-control" placeholder="NAME" value="Krisantus Wanandi">
+              <input class="app-form-control" placeholder="NAME">
             </div>
             <div class="app-form-group">
               <input class="app-form-control" placeholder="EMAIL">
@@ -135,16 +148,28 @@
 </div>
 
   </div>
-
-
   </div> 
 
-
-
 </div>
-
-
-
 <script>
+const spans = document.querySelectorAll('.word span');
+
+spans.forEach((span, idx) => {
+  span.addEventListener('click', (e) => {
+    e.target.classList.add('active');
+  });
+  span.addEventListener('animationend', (e) => {
+    e.target.classList.remove('active');
+  });
+  
+
+  setInterval(function(){
+  setTimeout(() => {
+    span.classList.add('active');
+  }, 750 * (idx+1));},4000
+
+  )
+
+});
 
 </script>
