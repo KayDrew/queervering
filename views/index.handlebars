@@ -1,175 +1,205 @@
 <div>
 
-<div class="indexPage">
+  <div class="indexPage">
 
-  <header>
-    <aside>
-      
-    <button type="button" class="menuBtn"><i class="fa fa-bars"></i></button>
-    <div class="largeMenu">
-      <p> Menu </p>
-      <a href="/" class="active1">
-        <i class="fa fa-home" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
-        Home
-      </a>
-      <a href="/events">
-        <i class="fa fa-calendar" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
-        Events
-      </a>
-      <a href="/gallery">
-        <i class="fa-solid fa-image" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
-        gallery
-      </a>
-      <a href="/publish">
-        <i class="fa fa-upload" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
-        Publish Your Event
-      </a>
-      <a href="/about">
-        <i class="fa-solid fa-info" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
-        About
-      </a>
-      <a href="/contact">
-        <i class="fa fa-envelope" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
-        Contact
-      </a>
+    <header>
+      <aside>
+
+        <button type="button" class="menuBtn"><i class="fa fa-bars"></i></button>
+        <div class="largeMenu">
+          <p> Menu </p>
+          <a href="/" class="active1">
+            <i class="fa fa-home" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
+            Home
+          </a>
+          <a href="/events">
+            <i class="fa fa-calendar" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
+            Events
+          </a>
+          <a href="/gallery">
+            <i class="fa-solid fa-image" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
+            gallery
+          </a>
+          <a href="/publish">
+            <i class="fa fa-upload" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
+            Publish Your Event
+          </a>
+          <a href="/about">
+            <i class="fa-solid fa-info" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
+            About
+          </a>
+          <a href="/contact">
+            <i class="fa fa-envelope" aria-hidden="true" style="color: rgb(254, 114, 137);"></i>
+            Contact
+          </a>
+        </div>
+      </aside>
+    </header>
+
+    <div class="content">
+
+      <div class="topContent">
+
+        <img src="/logo4.png" alt="logo" class="logo">
+
+        <div style="padding-top: 40px;">
+          <a href=""><img src="/icon4.jpg" alt="facebook" class="top-icon"></a>
+          <a href=""> <img src="/icon3.jpg" alt="twitter" class="top-icon"></a>
+        </div>
+
       </div>
-    </aside>
-  </header>
 
-  <div class="content">
-
-    <div class="topContent">
-
-      <img src="/logo4.png" alt="logo" class="logo">
-
-      <div style="padding-top: 40px;">
-       <a href=""><img src="/icon4.jpg" alt="facebook" class="top-icon"></a> 
-       <a href=""> <img src="/icon3.jpg" alt="twitter" class="top-icon"></a> 
-      </div>
-
-    </div>
-
-   <div class="wrapper nine" style="margin-bottom: 80px;">
+      <div class="wrapper nine" style="margin-bottom: 80px;">
         <div>
-            <h3 class="rotate">
-                <span>L</span>
-                <span>G</span>
-                <span>B</span>
-                <span>T</span>
-                <span>Q</span>
-                <span>+</span>
-                    
-            </h3>
-              
-            <h3><span id="pink">_EVENTS</span></h3>
-        </div>
-    </div>
+          <h3 class="rotate">
+            <span>L</span>
+            <span>G</span>
+            <span>B</span>
+            <span>T</span>
+            <span>Q</span>
+            <span>+</span>
 
-    <div class="categories">
-      
-      {{#each categories}}
-      <div class="entries">
-        <img src="{{this.image}}" alt="category">
-        <h4>{{this.name}}</h4> 
+          </h3>
+
+          <h3><span id="pink">_EVENTS</span></h3>
+        </div>
       </div>
- {{/each}}
-    </div>
+
+      <div class="categories">
+
+        {{#each categories}}
+        <div class="entries">
+          <img src="{{this.image}}" alt="category">
+          <h4>{{this.name}}</h4>
+        </div>
+        {{/each}}
+      </div>
       <div class="grey">
-    <h3 style="margin-bottom: 20px;color:rgb(228, 45, 106);font-size:24px ">Find LGBTQ+ Events In Your City</h3>
-    <p style="margin-bottom:25px;font-size:19px">Queervering brings you the best upcoming queer events near you. Looking to join the revolution for your human rights? Join one of the vibrant pride parades
-      near you. Lit themed parties and events are also available when you feel like getting down! Take a look at some of the featured events.
-    </p>
-    <a href="/events" class="linkBtn">See events..</a>
-  </div>
+        <h3 style="margin-bottom: 20px;color:rgb(206, 206, 3);font-size:24px ">Find LGBTQ+ Events In Your City</h3>
+        <p style="margin-bottom:25px;font-size:19px">Queervering brings you the best upcoming queer events near you.
+          Looking to join the revolution for your human rights? Join one of the vibrant pride parades
+          near you. Lit themed parties and events are also available when you feel like getting down! Take a look at
+          some of the featured events.
+        </p>
+        <a href="/events" class="linkBtn">See events..</a>
+      </div>
 
-  <div class="modal"></div>
-
-  <div class="form">
-<div class="word" style="text-align: center;padding-top:30px;color:orangered">
-  <span>T</span>
-  <span>A</span>
-  <span>L</span>
-  <span>K</span>
-  <span style="visibility:hidden;">_</span>
-  <span>T</span>
-  <span>O</span>
-  <span style="visibility:hidden;">_</span>
-  <span>U</span>
-   <span>S</span>
+<div class="gal" style="padding: 30px;background:#9e3ef7">
+  <h2>Be Amongst Kin</h2>
+  
+  <img class="mySlides" src="/cat1.png"  alt="slider photo">
+  <img class="mySlides" src="/cat2.png" alt="slider photo1" >
+  <img class="mySlides" src="/cat3.png" alt="slider photo2" >
 </div>
 
-    <div class="background">
-  <div class="container">
-    <div class="screen">
-      <div class="screen-header">
-        <div class="screen-header-left">
-          <div class="screen-header-button close"></div>
-          <div class="screen-header-button maximize"></div>
-          <div class="screen-header-button minimize"></div>
+      <div class="form">
+        <div class="word" style="text-align: center;padding-top:30px;color:orangered;text-shadow:1px 1px 1.2px white">
+          <span>T</span>
+          <span>A</span>
+          <span>L</span>
+          <span>K</span>
+          <span style="visibility:hidden;">_</span>
+          <span>T</span>
+          <span>O</span>
+          <span style="visibility:hidden;">_</span>
+          <span>U</span>
+          <span>S</span>
         </div>
-        <div class="screen-header-right">
-          <div class="screen-header-ellipsis"></div>
-          <div class="screen-header-ellipsis"></div>
-          <div class="screen-header-ellipsis"></div>
-        </div>
-      </div>
-      <div class="screen-body">
-        <div class="screen-body-item left">
-          <div class="app-title">
-            <span>Hit Us Up</span>
-           
+
+        <div class="background">
+          <div class="container">
+            <div class="screen">
+              <div class="screen-header">
+                <div class="screen-header-left">
+                  <div class="screen-header-button close"></div>
+                  <div class="screen-header-button maximize"></div>
+                  <div class="screen-header-button minimize"></div>
+                </div>
+                <div class="screen-header-right">
+                  <div class="screen-header-ellipsis"></div>
+                  <div class="screen-header-ellipsis"></div>
+                  <div class="screen-header-ellipsis"></div>
+                </div>
+              </div>
+              <div class="screen-body">
+                <div class="screen-body-item left">
+                  <div class="app-title">
+                    <span>Hit Us Up</span>
+
+                  </div>
+                  <div class="app-contact">info@queervering.com</div>
+                </div>
+                <div class="screen-body-item">
+                  <div class="app-form">
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="NAME">
+                    </div>
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="EMAIL">
+                    </div>
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="CONTACT NO">
+                    </div>
+                    <div class="app-form-group message">
+                      <input class="app-form-control" placeholder="MESSAGE">
+                    </div>
+                    <div class="app-form-group buttons">
+                      <button class="app-form-button">CANCEL</button>
+                      <button class="app-form-button">SEND</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <div class="app-contact">info@queervering.com</div>
         </div>
-        <div class="screen-body-item">
-          <div class="app-form">
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="NAME">
-            </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="EMAIL">
-            </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="CONTACT NO">
-            </div>
-            <div class="app-form-group message">
-              <input class="app-form-control" placeholder="MESSAGE">
-            </div>
-            <div class="app-form-group buttons">
-              <button class="app-form-button">CANCEL</button>
-              <button class="app-form-button">SEND</button>
-            </div>
-          </div>
-        </div>
+
       </div>
+
+
     </div>
 
   </div>
-</div>
+  <script>
 
-  </div>
-  </div> 
 
-</div>
-<script>
-const spans = document.querySelectorAll('.word span');
+    const spans = document.querySelectorAll('.word span');
 
-spans.forEach((span, idx) => {
-  span.addEventListener('click', (e) => {
-    e.target.classList.add('active');
-  });
-  span.addEventListener('animationend', (e) => {
-    e.target.classList.remove('active');
-  });
-  
+    spans.forEach((span, idx) => {
+      span.addEventListener('click', (e) => {
+        e.target.classList.add('active');
+      });
+      span.addEventListener('animationend', (e) => {
+        e.target.classList.remove('active');
+      });
 
-  setInterval(function(){
-  setTimeout(() => {
-    span.classList.add('active');
-  }, 750 * (idx+1));},4000
 
-  )
+      setInterval(function () {
+        setTimeout(() => {
+          span.classList.add('active');
+        }, 750 * (idx + 1));
+      }, 4000
 
-});
+      )
 
-</script>
+    });
+
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+
+  </script>
