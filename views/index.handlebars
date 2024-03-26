@@ -75,8 +75,8 @@
         {{/each}}
       </div>
       <div class="grey">
-        <h3 style="margin-bottom: 20px;color:rgb(206, 206, 3);font-size:24px ">Find LGBTQ+ Events In Your City</h3>
-        <p style="margin-bottom:25px;font-size:19px">Queervering brings you the best upcoming queer events near you.
+        <h2 style="margin-bottom: 20px;font-size:40px">Find LGBTQ+ Events In Your City</h2>
+        <p style="margin-bottom:40px;font-size:19px">Queervering brings you the best upcoming queer events near you.
           Looking to join the revolution for your human rights? Join one of the vibrant pride parades
           near you. Lit themed parties and events are also available when you feel like getting down! Take a look at
           some of the featured events.
@@ -84,15 +84,27 @@
         <a href="/events" class="linkBtn">See events..</a>
       </div>
 
-<div class="gal" style="padding: 30px;background:#9e3ef7">
-  <h2>Be Amongst Kin</h2>
-  
+<div style="padding-top:60px;background:rgb(77, 4, 105)" class="gall">
+
+  <h2 style="font-size:70px;opacity:4; fliter:contrast(4);filter:brightness(3); text-align:center;margin:40px;color:rgb(99, 99, 99)">PAST EVENTS</h2>
+
+  <div class="photos">
   <img class="mySlides" src="/cat1.png"  alt="slider photo">
   <img class="mySlides" src="/cat2.png" alt="slider photo1" >
   <img class="mySlides" src="/cat3.png" alt="slider photo2" >
+    <img class="mySlides" src="/cat4.png" alt="slider photo2" >
 </div>
 
-      <div class="form">
+</div>
+<div class="register" >
+  <h3 style="font-size:30px;margin-bottom:20px">Upload Your Event!</h3>
+  <p>Help your patriots find you. Register your event with us to make it widely accessible to a larger audience. Having your event on the internet
+    gives you access to more eyes, more exposure, and increases trust.
+    <span>IT'S FREE!</span>
+    We do not charge to put you on the net. Go on <span>Register</span>
+  </p>
+</div>
+      <div class="form" style="  padding-bottom: 60px;">
         <div class="word" style="text-align: center;padding-top:30px;color:orangered;text-shadow:1px 1px 1.2px white">
           <span>T</span>
           <span>A</span>
@@ -185,21 +197,6 @@
 
     });
 
-
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
 
 
   </script>

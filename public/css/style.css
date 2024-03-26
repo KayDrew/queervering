@@ -25,6 +25,7 @@ body{
  
 }
 
+
 .social-icon,
 .menu {
   position: relative;
@@ -250,8 +251,8 @@ margin:10px;
 .categories{
 width: 80%;
 margin: 0 auto;
-  opacity: 4;
-  filter: contrast(1.5);
+  opacity: 3;
+  filter: contrast(1.3);
  
 }
 
@@ -350,18 +351,20 @@ div{
 }
 
 .grey{
-  background-color: rgba(34, 34, 34, 0.537);
-  padding: 40px;
-color: rgba(255, 255, 255, 0.871);
+  background-color: rgba(235, 235, 235, 0.932);
+  padding: 80px;
+color: rgba(22, 22, 22, 0.959);
   text-shadow: 0.1px 0.1px 0.3px black;
+
 
 }
 
 .linkBtn{
-  padding: 11px;
-  background-color:rgb(206, 206, 3);
+  padding: 15px;
+  background-color:rgb(202, 5, 64);
   border-radius: 5px;
-  color: rgb(54, 54, 54);
+  color: rgb(255, 255, 255);
+  font-size: 17px;
 
 }
 
@@ -400,6 +403,8 @@ color: rgba(255, 255, 255, 0.871);
   background: #292929;
   border-radius: 15px;
   margin-top: 50px;
+  opacity: 2;
+  filter: contrast(2);
 }
 
 .screen:after {
@@ -567,15 +572,21 @@ a{
 
 
 .mySlides{
-  height: 500px;
-  width: 400px;
-  margin:0 auto;
-  margin-top:40px ;
-  border-radius: 50px;
-  box-shadow: 10px 10px 15px #481a72, -10px -10px 15px #481a72;
+  height: 250px;
+  width: 250px;
+margin: 0 auto;
+opacity: 3;
+filter: contrast(1.1);
+  border: 20px solid rgba(255, 255, 255, 0.815);
+
 
 }
 
+.register{
+  padding: 40px;
+  background-color: black;
+  color: #ffffffd5;
+}
 
 
 figure {
@@ -629,19 +640,20 @@ figure:after {
 .word {
   font-family: 'Anton', sans-serif;
   perspective: 1000px; 
+
 }
 
 .word span {
   cursor: pointer;
   display: inline-block;
-  font-size: 60px;
+  font-size: 30px;
   user-select: none;
   line-height: .8;
-  background: linear-gradient(
-    to right, pink,green, purple, orange,red
-  );
+  background: rgba(224, 223, 223, 0.897);  
   background-clip: content-box;
   color:#333232;
+  opacity: 2;
+  filter: contrast(1.1);
 }
 
 .word span:nth-child(1).active {
@@ -772,12 +784,26 @@ figure:after {
 
 @media screen and (min-width:800px){
 
-  .screen-body-item {
+  .gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
+  .word span {
+    font-size: 50px;
+  }
+
+  .photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
     padding: 50px;
   }
 
-  .grey,.form,.gal{
+  .screen-body-item {
+    padding: 50px;
+  }
+
+  .grey,.form,.gall,.register{
   margin-left: -66px;
   }
 
